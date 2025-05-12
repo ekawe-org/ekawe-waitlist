@@ -62,10 +62,10 @@ export default function WaitlistForm() {
               <CheckCircle className="w-20 h-20 text-primary" />
             </div>
             <div className="space-y-3">
-              <h3 className="text-3xl font-bold text-gray-900">
+              <h3 className="text-3xl font-bold text-secondary">
                 Thank you for joining the waitlist!
               </h3>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-primary-700">
                 Stay tuned for updates. We'll be in touch soon!
               </p>
             </div>
@@ -84,10 +84,10 @@ export default function WaitlistForm() {
               <AlertCircle className="w-20 h-20 text-primary" />
             </div>
             <div className="space-y-3">
-              <h3 className="text-3xl font-bold text-gray-900">
+              <h3 className="text-3xl font-bold text-secondary">
                 Submission Failed
               </h3>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-primary-700">
                 {error}
               </p>
             </div>
@@ -97,7 +97,7 @@ export default function WaitlistForm() {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="space-y-2">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="name" className="block text-sm font-medium text-secondary">
             Name
           </label>
           <input
@@ -107,13 +107,13 @@ export default function WaitlistForm() {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-6 py-3 bg-gray-50 border border-gray-200 rounded-full focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+            className="w-full px-6 py-3 bg-primary-50 border border-primary-200 rounded-full focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
             placeholder="Enter your name"
           />
         </div>
 
         <div className="space-y-2">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="email" className="block text-sm font-medium text-secondary">
             Email
           </label>
           <input
@@ -123,13 +123,13 @@ export default function WaitlistForm() {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-6 py-3 bg-gray-50 border border-gray-200 rounded-full focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+            className="w-full px-6 py-3 bg-primary-50 border border-primary-200 rounded-full focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
             placeholder="Enter your email"
           />
         </div>
 
         <div className="space-y-2">
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="phone" className="block text-sm font-medium text-secondary">
             Phone Number
           </label>
           <input
@@ -139,7 +139,7 @@ export default function WaitlistForm() {
             required
             value={formData.phone}
             onChange={handleChange}
-            className="w-full px-6 py-3 bg-gray-50 border border-gray-200 rounded-full focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+            className="w-full px-6 py-3 bg-primary-50 border border-primary-200 rounded-full focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
             placeholder="Enter your phone number"
           />
         </div>
