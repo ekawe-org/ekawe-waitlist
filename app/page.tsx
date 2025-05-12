@@ -6,25 +6,31 @@ import ekaweLogo from './assests/ekawe.png';
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background-light via-white to-background-light">
+      {/* Sticky Header */}
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-24">
+            <div className="flex items-center space-x-4">
+              <div className="relative w-24 h-24">
+                <Image
+                  src={ekaweLogo}
+                  alt="Ekawe Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <span className="text-gray-600 text-sm">
+                Grow with Guidance. Thrive with Purpose.
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center justify-center p-6">
         <div className="w-full max-w-md space-y-12">
-          {/* Logo */}
-          <div className="animate-fade-in space-y-1">
-            <div className="relative w-48 h-24 mx-auto rounded-lg">
-              <Image
-                src={ekaweLogo}
-                alt="Ekawe Logo"
-                fill
-                className="object-contain p-2"
-                priority
-              />
-            </div>
-            <span className="text-gray-600 text-sm block text-center">
-              Grow with Guidance. Thrive with Purpose.
-            </span>
-          </div>
-
           {/* Hero Content */}
           <div className="space-y-4 animate-slide-up">
             <div className="space-y-1">
