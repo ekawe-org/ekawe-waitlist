@@ -1,19 +1,27 @@
 import WaitlistForm from './components/WaitlistForm';
 import Footer from './components/Footer';
+import Image from 'next/image';
+import ekaweLogo from './assests/ekawe.png';
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 via-white to-gray-50">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-background-light via-white to-background-light">
       {/* Main Content */}
       <main className="flex-grow flex flex-col items-center justify-center p-6">
         <div className="w-full max-w-md space-y-12">
           {/* Logo */}
           <div className="animate-fade-in space-y-1">
-            <span className="text-4xl font-bold text-primary block">
-              ekawe
-            </span>
-            <span className="text-gray-500 text-sm">
-              some logo subtext 
+            <div className="relative w-48 h-24 mx-auto rounded-lg">
+              <Image
+                src={ekaweLogo}
+                alt="Ekawe Logo"
+                fill
+                className="object-contain p-2"
+                priority
+              />
+            </div>
+            <span className="text-gray-600 text-sm block text-center">
+              Grow with Guidance. Thrive with Purpose.
             </span>
           </div>
 
@@ -24,7 +32,7 @@ export default function Home() {
                 Join the
               </h1>
               <h1 className="text-5xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-primary to-purple-600 text-transparent bg-clip-text">Waitlist</span>
+                <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">Waitlist</span>
               </h1>
             </div>
             <p className="text-gray-600 text-lg">
