@@ -13,7 +13,7 @@ export default function Home() {
               ekawe
             </span>
             <span className="text-gray-500 text-sm">
-              some logo subtext 
+              Grow with Guidance. Thrive with Purpose.
             </span>
           </div>
 
